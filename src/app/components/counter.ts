@@ -11,7 +11,7 @@ export class CounterComponent {
 
   counter: number;
 
-  //Instead of initialisin the counter variable in the variables declaration, we initialise it in the constructor.
+  //Instead of initialising the counter variable in the variables declaration, we initialise it in the constructor.
   constructor() {
     this.counter = 0;
   }
