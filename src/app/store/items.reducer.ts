@@ -8,7 +8,7 @@ export const initialState = 0;
 //Every time the 'increment' action is called, we take our current state and increase it by 1. It works in a similar way to a switch case.
 export const counterReducer = createReducer(
   initialState,
-  on(increment, (state) => state++),
-  on(decrement, (state) => state--),
+  on(increment, (state) => state + 1),
+  on(decrement, (state) => state - 1),
   on(reset, (state) => 0)
 )
