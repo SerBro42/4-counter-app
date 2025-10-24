@@ -27,13 +27,13 @@ export class CounterComponent {
 
   increase(): void {
     //this.counter++;
-    this.store.dispatch(increment());
+    this.store.dispatch(increment({add: 0.69}));
     console.log('increasing ...');
   }
 
   decrease(): void {
     //this.counter--;
-    this.store.dispatch(decrement());
+    this.store.dispatch(decrement({subtrct: 1}));
     console.log('decreasing ...');
   }
 
